@@ -19,6 +19,8 @@ export function draw(gameBoard) {
     gameBoard.appendChild(foodElement)
 }
 
+// the function to establish each new piece of food,
+// and make sure that it appears on the board somewhere OUTSIDE of the worm.
 function getRandomFoodPosition() {
     let newFoodPosition
     while (newFoodPosition == null || onSnake(newFoodPosition)) {
