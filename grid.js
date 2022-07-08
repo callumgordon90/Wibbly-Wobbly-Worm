@@ -1,3 +1,4 @@
+//The game board is mapped out as a grid, and here is where the size of the grid is defined:
 const GRID_SIZE = 21
 
 export function randomGridPosition() {
