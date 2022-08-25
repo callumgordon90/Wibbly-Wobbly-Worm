@@ -1,7 +1,9 @@
 import { update as updateSnake, draw as drawSnake, SNAKE_SPEED, getSnakeHead, snakeIntersection, update, draw } from './snake.js'
 import { update as updateFood, draw as drawFood } from './food.js'
 import { outsideGrid } from './grid.js'
+// importing the other elements into the main game
 
+//establishing the default settings
 let lastRenderTime = 0
 let gameOver = false
 const gameBoard = document.getElementById('game-board')
@@ -16,7 +18,7 @@ function main(currentTime) {
 
 
     window.requestAnimationFrame(main)
-    const secondsSinceLastRender = ( currentTime - lastRenderTime) / 1000
+    const secondsSinceLastRender = (currentTime - lastRenderTime) / 1000
     if (secondsSinceLastRender < 1 / SNAKE_SPEED) return
 
     lastRenderTime = currentTime
